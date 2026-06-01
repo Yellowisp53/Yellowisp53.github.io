@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROMARKET — Интернет-магазин</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<button class="mobile-menu-btn">
+    ☰
+</button>
+
+    <header class="header sticky-header">
+        <div class="header__top">
+            <div class="container header__top-wrapper">
+                <div class="header__top-left">
+                    <div class="header__logo">
+                        <img src="images/ЛОГО.jpg" alt="PROMARKET">
+                    </div>
+                    <div class="header__location">
+                        <span class="header__city">Москва</span>
+                    </div>
+                </div>
+                
+                <div class="header__center-contacts">
+                    <a href="tel:84950183210" class="header__phone">8 495 018-32-10</a>
+                    <a href="#" class="header__callback">Заказать звонок</a>
+                </div>
+
+                <nav class="header__top-nav">
+                    <a href="#">Оплата</a>
+                    <a href="#">Доставка</a>
+                    <a href="#">Поставщикам</a>
+                    <a href="#">Статьи</a>
+                    <a href="#">Контакты</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__main">
+            <div class="container header__main-wrapper">
+                <div class="header__catalog-group">
+                    <button class="btn btn--catalog">
+                        <span class="burger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span> 
+                        КАТАЛОГ ТОВАРОВ
+                    </button>
+                    <button class="btn btn--action">АКЦИИ</button>
+                    <button class="btn btn--brand">БРЕНДЫ</button>
+                </div>
+                
+                <div class="header__search-wrap">
+                    <img src="images/Лупа.jpg" alt="Поиск" class="search-icon">
+                    <input type="text" placeholder="Что вы ищете?">
+                </div>
+
+                <div class="header__user-menu">
+                    <a href="#" class="user-menu__item">
+                        <img src="images/каб.jpg" alt="Кабинет">
+                    </a>
+                    <a href="#" class="user-menu__item user-menu__item--badge">
+                        <img src="images/лайк.jpg" alt="Избранное">
+                        <span class="badge">4</span>
+                    </a>
+                    <a href="#" class="user-menu__item user-menu__item--badge">
+                        <img src="images/корзина.jpg" alt="Корзина">
+                        <span class="badge">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="promo-section">
+            <div class="promo-slider">
+                <button class="slider-arrow slider-arrow--left">‹</button>
+                <button class="slider-arrow slider-arrow--right">›</button>
+                
+                <div class="promo-slider__content">
+                    <h1 class="promo-slider__title">СМЕСИТЕЛИ<br>RAIBER</h1>
+                    <p class="promo-slider__subtitle">уже в наличии</p>
+                    <a href="#" class="btn btn--more">Подробнее</a>
+                </div>
+
+                <div class="promo-slider__dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <div class="promo-aside">
+                <div class="aside-card aside-card--blue">
+                    <h3 class="aside-card__title">УНИТАЗЫ<br>ДО 10 000 ₽</h3>
+                    <a href="#" class="aside-card__link">подробнее</a>
+                </div>
+                <div class="aside-card aside-card--teal">
+                    <h3 class="aside-card__title">ТОВАРЫ<br>СО СКИДКОЙ</h3>
+                    <a href="#" class="aside-card__link">подробнее</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="feature-item">
+                <img src="images/фура.jpg" alt="" class="feature-item__icon">
+                <p class="feature-item__text">Быстрая доставка по Москве и в любой регион России</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/щит.jpg" alt="" class="feature-item__icon">
+                <p class="feature-item__text">Все товары имеют официальную гарантию производителя</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/телега.jpg" alt="" class="feature-item__icon">
+                <p class="feature-item__text">Более 100 000 товаров</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/рубль.jpg" alt="" class="feature-item__icon">
+                <p class="feature-item__text">Любой способ оплаты</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/палецвверх.jpg" alt="" class="feature-item__icon">
+                <p class="feature-item__text">Высокие оценки клиентов</p>
+            </div>
+        </section>
+
+        <section class="collections-section">
+            <h2 class="section-title">Коллекции плитки</h2>
+            
+            <div class="collections-grid">
+                <div class="collection-card collection-card--large" style="background-image: url('images/имг1.png');">
+                    <div class="collection-info-block">
+                        <div class="collection-card__badge">Сияние</div>
+                        <div class="collection-card__brand">Novogres (Испания)</div>
+                    </div>
+                </div>
+
+                <div class="collection-card" style="background-image: url('images/имг2.png');">
+                    <div class="collection-info-block">
+                        <div class="collection-card__badge">Вестминстер</div>
+                        <div class="collection-card__brand">Kerama Marazzi</div>
+                    </div>
+                </div>
+
+                <div class="collection-card" style="background-image: url('images/имг3.png');">
+                    <div class="collection-info-block">
+                        <div class="collection-card__badge">Rotterdam</div>
+                        <div class="collection-card__brand">Gracia Ceramica</div>
+                    </div>
+                </div>
+
+                <div class="collection-card" style="background-image: url('images/имг4.png');">
+                    <div class="collection-info-block">
+                        <div class="collection-card__badge">Nuvo</div>
+                        <div class="collection-card__brand">Aparici Ceramica</div>
+                    </div>
+                </div>
+
+                <div class="collection-card" style="background-image: url('images/имг5.png');">
+                    <div class="collection-info-block">
+                        <div class="collection-card__badge">Навада</div>
+                        <div class="collection-card__brand">Kerama Marazzi</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hits-section">
+            <div class="hits-header">
+                <h2 class="hits-title">Хиты продаж</h2>
+                <div class="hits-tabs">
+                    <button class="hit-tab active">Любые товары</button>
+                    <button class="hit-tab">Раковины</button>
+                    <button class="hit-tab">Ванны</button>
+                    <button class="hit-tab">Унитазы</button>
+                    <button class="hit-tab">Душевые системы</button>
+                    <button class="hit-tab">Смесители</button>
+                    <button class="hit-tab">Зеркала</button>
+                    <button class="hit-tab">Душевые кабины</button>
+                    <button class="hit-tab">Стиральные машины</button>
+                </div>
+            </div>
+
+            <div class="hits-slider-wrapper">
+                <button class="hit-arrow hit-arrow--left">‹</button>
+                <button class="hit-arrow hit-arrow--right">›</button>
+
+                <div class="hits-grid">
+                    <div class="product-item">
+                        <div class="product-item__badges"><span class="p-badge p-badge--hit">ХИТ</span></div>
+                        <div class="product-item__image"><img src="images/раковина.png" alt=""></div>
+                        <div class="product-item__rating"><span class="stars">★★★★★</span> <span class="rating-count">12</span></div>
+                        <a href="#" class="product-item__title">Раковина Roca Debba 32799600Y, 60х48 см</a>
+                        <div class="product-item__country">Испания</div>
+                        <div class="product-item__footer">
+                            <div class="product-item__price-box"><span class="price-current">2 601 ₽</span></div>
+                            <button class="product-item__cart-btn">В КОРЗИНУ</button>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-item__badges">
+                            <span class="p-badge p-badge--hit">ХИТ</span>
+                            <span class="p-badge p-badge--action">АКЦИЯ</span>
+                        </div>
+                        <div class="product-item__image"><img src="images/ванна.jpg" alt=""></div>
+                        <div class="product-item__rating"><span class="stars">★★★★★</span> <span class="rating-count">2</span></div>
+                        <a href="#" class="product-item__title">Акриловая ванна AM.PM Like L 170x70 W80A-170-070W-A20</a>
+                        <div class="product-item__country">Германия</div>
+                        <div class="product-item__footer">
+                            <div class="product-item__price-box">
+                                <span class="price-current">26 990 ₽</span>
+                                <span class="price-old">28 601 ₽</span>
+                            </div>
+                            <button class="product-item__cart-btn">В КОРЗИНУ</button>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-item__badges"><span class="p-badge p-badge--hit">ХИТ</span></div>
+                        <div class="product-item__image"><img src="images/душ.jpg" alt=""></div>
+                        <div class="product-item__rating"><span class="stars">★★★★★</span> <span class="rating-count">24</span></div>
+                        <a href="#" class="product-item__title">Душевая система Raiber R2404, хром</a>
+                        <div class="product-item__country">Германия</div>
+                        <div class="product-item__footer">
+                            <div class="product-item__price-box"><span class="price-current">12 207 ₽</span></div>
+                            <button class="product-item__cart-btn">В КОРЗИНУ</button>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-item__badges"><span class="p-badge p-badge--hit">ХИТ</span></div>
+                        <div class="product-item__image"><img src="images/унитаз.jpg" alt=""></div>
+                        <div class="product-item__rating"><span class="stars">★★★★★</span> <span class="rating-count">4</span></div>
+                        <a href="#" class="product-item__title">Унитаз AM.PM Spirit V2.0 C708607SC компакт с сиденьем микролифт</a>
+                        <div class="product-item__country">Испания</div>
+                        <div class="product-item__footer">
+                            <div class="product-item__price-box"><span class="price-current">14 764 ₽</span></div>
+                            <button class="product-item__cart-btn">В КОРЗИНУ</button>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-item__badges"><span class="p-badge p-badge--hit">ХИТ</span></div>
+                        <div class="product-item__image"><img src="images/сушилка.jpg" alt=""></div>
+                        <div class="product-item__rating"><span class="stars">★★★★★</span> <span class="rating-count">10</span></div>
+                        <a href="#" class="product-item__title">Полотенцесушитель электрический Laris Наполи П7 40 х 60 см</a>
+                        <div class="product-item__country">Россия, Украина</div>
+                        <div class="product-item__footer">
+                            <div class="product-item__price-box"><span class="price-current">12 730 ₽</span></div>
+                            <button class="product-item__cart-btn">В КОРЗИНУ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hits-section offers-slider-section">
+            <div class="hits-header">
+                <h2 class="hits-title">Акции</h2>
+                <div class="hits-tabs">
+                    <button class="hit-tab active">Любые товары</button>
+                    <button class="hit-tab">Смесители</button>
+                    <button class="hit-tab">Полотенцесушители</button>
+                    <button class="hit-tab">Биде</button>
+                    <button class="hit-tab">Душевые системы</button>
+                    <button class="hit-tab">Ванны</button>
+                    <button class="hit-tab">Унитазы</button>
+                    <button class="hit-tab">Отопители</button>
+                    <button class="hit-tab">Посудомоечные машины</button>
+                </div>
+            </div>
+
+            <div class="hits-slider-wrapper">
+                <button class="hit-arrow hit-arrow--left">‹</button>
+                <button class="hit-arrow hit-arrow--right">›</button>
+
+                <div class="hits-grid">
+                    <div class="product-item">
+                        <div class="product-item__badges"><span class="p-badge p-badge--action">АКЦИЯ</span></div>
+                        <div class="product-item__image"><img src="images/кран.jpg" alt=""></div>
+                        <div class="product-item__rating"><span class="stars">★★★★★</span> <span class="rating-count">12</span></div>
+                        <a href="#" class="product-item__title">Смеситель Hansgrohe Logis 71070000 для раковины</a>
+                        <div class="product-item__country">Германия</div>
+                        <div class="product-item__footer">
+                            <div class="product-item__price-box">
+                                <span class="price-current">6 050 ₽</span>
+                                <span class="price-old">7 601 ₽</span>
+                            </div>
+                            <button class="product-item__cart-btn">В КОРЗИНУ</button>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-item__badges"><span class="p-badge p-badge--action">АКЦИЯ</span></div>
+                        <div class="product-item__image"><img src="images/душевая.jpg" alt=""></div>
+                        <div class="product-item__rating"><span class="stars">★★★★★</span> <span class="rating-count">12</span></div>
+                        <a href="#" class="product-item__title">Душевая кабина Black&White Galaxy G8800, 80 х 110 см</a>
+                        <div class="product-item__country">Германия</div>
+                        <div class="product-item__footer">
+                            <div class="product-item__price-box">
+                                <span class="price-current">84 000 ₽</span>
+                                <span class="price-old">90 580 ₽</span>
+                            </div>
+                            <button class="product-item__cart-btn">В КОРЗИНУ</button>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-item__badges"><span class="p-badge p-badge--action">АКЦИЯ</span></div>
+                        <div class="product-item__image"><img src="images/ванная.jpg" alt=""></div>
+                        <div class="product-item__rating"><span class="stars">★★★★★</span> <span class="rating-count">12</span></div>
+                        <a href="#" class="product-item__title">Ванна акриловая Am.Pm Spirit W72A-160L100W-A2, 160 х 100 см, левосторонняя</a>
+                        <div class="product-item__country">Германия</div>
+                        <div class="product-item__footer">
+                            <div class="product-item__price-box">
+                                <span class="price-current">29 990 ₽</span>
+                                <span class="price-old">36 900 ₽</span>
+                            </div>
+                            <button class="product-item__cart-btn">В КОРЗИНУ</button>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-item__badges"><span class="p-badge p-badge--action">АКЦИЯ</span></div>
+                        <div class="product-item__image"><img src="images/тауалет.jpg" alt=""></div>
+                        <div class="product-item__rating"><span class="stars">★★★★★</span> <span class="rating-count">12</span></div>
+                        <a href="#" class="product-item__title">Унитаз Laguraty 8074 крышка микролифт, с функцией биде</a>
+                        <div class="product-item__country">Китай</div>
+                        <div class="product-item__footer">
+                            <div class="product-item__price-box">
+                                <span class="price-current">32 108 ₽</span>
+                                <span class="price-old">34 900 ₽</span>
+                            </div>
+                            <button class="product-item__cart-btn">В КОРЗИНУ</button>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-item__badges"><span class="p-badge p-badge--action">АКЦИЯ</span></div>
+                        <div class="product-item__image"><img src="images/Раковина.jpg" alt=""></div>
+                        <div class="product-item__rating"><span class="stars">★★★★★</span> <span class="rating-count">12</span></div>
+                        <a href="#" class="product-item__title">Раковина Laufen Palace 120 см 8.1170.4.000.104.1</a>
+                        <div class="product-item__country">Швейцария</div>
+                        <div class="product-item__footer">
+                            <div class="product-item__price-box">
+                                <span class="price-current">53 458 ₽</span>
+                                <span class="price-old">58 601 ₽</span>
+                            </div>
+                            <button class="product-item__cart-btn">В КОРЗИНУ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section class="brands-section">
+    <h2 class="section-title brands-title">Популярные бренды</h2>
+    <div class="brands-grid">
+        <div class="brand-item">
+            <a href="https://www.hansgrohe.de/" target="_blank">
+                <img src="images/лог1.png" alt="hansgrohe">
+            </a>
+        </div>
+        <div class="brand-item">
+            <a href="https://www.grohe.com/de-DE/lernen-entdecken/news-events/duschmomente/smartcontrol-duschsysteme?gclsrc=aw.ds&gad_source=1&gad_campaignid=23842200214&gbraid=0AAAAADsMggGuB6reHDWNwl8uqGz0qIqic&gclid=CjwKCAjw8uTQBhAdEiwAVvtJytU3DeK9q1ufaG8k1p3jNtWqqO3CwknhOJGCH4CkmTwY5uFa8SESmhoCmeoQAvD_BwE" target="_blank">
+                <img src="images/лог2.png" alt="GROHE">
+            </a>
+        </div>
+        <div class="brand-item">
+            <a href="https://stworki.ru/" target="_blank">
+                <img src="images/лог3.png" alt="STWORKI">
+            </a>
+        </div>
+        <div class="brand-item">
+            <a href="https://ampm-store.ru/?srsltid=AfmBOoq_7uBFf2_SYwWZgTywyBmpJQYEpKlRuTGEuDpALbom1I0H2Oir" target="_blank">
+                <img src="images/лог4.png" alt="AM.PM">
+            </a>
+        </div>
+    </div>
+</section>
+
+        <section class="articles-section">
+            <h2 class="articles-title">Статьи</h2>
+            <div class="articles-slider-container">
+                <button class="article-arrow article-arrow--left">‹</button>
+                <button class="article-arrow article-arrow--right">›</button>
+
+                <div class="articles-grid">
+                    <article class="article-card">
+                        <div class="article-card__image"><img src="images/1.png" alt=""></div>
+                        <div class="article-card__content">
+                            <a href="#" class="article-card__title">Актуальные и необычные аксессуары для ванной комнаты</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-card__image"><img src="images/2.png" alt=""></div>
+                        <div class="article-card__content">
+                            <a href="#" class="article-card__title">Какой температуры должна быть горячая вода?</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-card__image"><img src="images/3.png" alt=""></div>
+                        <div class="article-card__content">
+                            <a href="#" class="article-card__title">Конденсат на бачке унитаза: причины появления и способы устранения</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-card__image"><img src="images/4.png" alt=""></div>
+                        <div class="article-card__content">
+                            <a href="#" class="article-card__title">Анаэробный герметик для резьбовых соединений</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="seo-section">
+            <div class="seo-container">
+                <div class="seo-bg-plate"></div>
+                
+                <div class="seo-content-grid">
+                    <div class="seo-image">
+                        <img src="images/ара.png" alt="Интерьер кухни">
+                    </div>
+                    <div class="seo-text-block">
+                        <h2 class="seo-title">Блок SEO-текста про магазин</h2>
+                        
+                        <p class="seo-paragraph">
+                            GG Promarket — крупный ритейлер сантехнического оборудования, плитки 
+                            и аксессуаров. Мы нацелены на то, чтобы сделать процесс выбора 
+                            и покупки сантехники максимально простым и интуитивно понятным. 
+                            При создании и обновлении сайта <a href="#" class="seo-link">santehnika-online.ru</a> мы продумали 
+                            логичную структуру каталога, организовали систему поиска, снабдили 
+                            карточки товаров подробными описаниями и характеристиками.
+                        </p>
+                        
+                        <p class="seo-paragraph">
+                            Выбирать оборудование в нашем магазине легко даже тем, кто впервые 
+                            имеет дело с сантехникой. А уточнить детали и получить информацию 
+                            о совместимости товаров круглосуточно помогут опытные консультанты 
+                            нашего контакт-центра. С нами вы полюбите выбирать!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================================================================
+         ФОРМА ОБРАТНОЙ СВЯЗИ (добавлена для задания №4, пункт 6)
+    ================================================================ -->
+    <div class="container">
+        <section class="feedback-section" id="feedback-section">
+            <h2>Обратная связь</h2>
+            <form class="feedback-form" onsubmit="return false;">
+
+                <!-- Имя -->
+                <div class="feedback-form__field">
+                    <label for="fb-name">Ваше имя *</label>
+                    <input type="text" id="fb-name" placeholder="Иван Иванов" required>
+                </div>
+
+                <!-- Телефон -->
+                <div class="feedback-form__field">
+                    <label for="fb-phone">Телефон *</label>
+                    <input type="tel" id="fb-phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+
+                <!-- Email -->
+                <div class="feedback-form__field">
+                    <label for="fb-email">Email</label>
+                    <input type="email" id="fb-email" placeholder="example@mail.ru">
+                </div>
+
+                <!-- Тема -->
+                <div class="feedback-form__field">
+                    <label for="fb-subject">Тема сообщения</label>
+                    <input type="text" id="fb-subject" placeholder="Вопрос по заказу">
+                </div>
+
+                <!-- Сообщение — на всю ширину -->
+                <div class="feedback-form__field feedback-form__field--full">
+                    <label for="fb-message">Сообщение *</label>
+                    <textarea id="fb-message" placeholder="Напишите ваш вопрос или пожелание..." required></textarea>
+                </div>
+
+                <!-- Кнопка отправки -->
+                <div class="feedback-form__submit">
+                    <button type="submit" class="feedback-form__btn">ОТПРАВИТЬ</button>
+                </div>
+
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__main-white">
+            <div class="container footer__grid">
+                
+                <ul class="footer__navigation">
+                    <li><a href="#">Плитка</a></li>
+                    <li><a href="#">Сантехника</a></li>
+                    <li><a href="#">Мебель для ванной</a></li>
+                    <li><a href="#">Электроника и бытовая техника</a></li>
+                    <li><a href="#">Отопление</a></li>
+                    <li><a href="#">Напольное покрытие</a></li>
+                </ul>
+
+                <ul class="footer__navigation">
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Поставщикам</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+                <div class="footer__contacts-block">
+                    <a href="tel:84950183210" class="footer__phone-link">8 495 018-32-10</a>
+                    
+                    <button class="footer__callback-btn">ЗАКАЗАТЬ ЗВОНОК</button>
+                    
+                    <div class="footer__schedule">
+                        <p>Пн-Пт: 10:00 — 20:00</p>
+                        <p>Сб: 10:00 — 18:00</p>
+                        <p>Вс: выходной</p>
+                    </div>
+                    
+                    <div class="footer__meta-row">
+                        <div class="footer__logo-bottom">
+
+                        </div>
+                        <div class="footer__social-links">
+                            <a href="#" class="ico-whatsapp"><img src="images/ватс.jpg" alt="WhatsApp"></a>
+                            <a href="#" class="ico-telegram"><img src="images/тг.jpg" alt="Telegram"></a>
+                            <a href="#" class="ico-instagram"><img src="images/инст.jpg" alt="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__info-block">
+                    <div class="footer__address">
+                        <p>Склад: Москва, ул. Салтыковская, 6 стр 11</p>
+                        <p><a href="mailto:zakaz@ggpromarket.ru">zakaz@ggpromarket.ru</a></p>
+                    </div>
+                    
+                    <div class="footer__yandex-badge">
+                        <a href="#"><img src="images/яндекс.png" alt="Яндекс Маркет оцените наш магазин"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer__bottom-gray">
+            <div class="container">
+                <div class="footer__copyright">© 2020 ggpromarket.ru</div>
+                <p class="footer__disclaimer">
+                    Копирование всех составляющих частей сайта в какой бы то ни было форме без письменного разрешения владельцев авторских прав запрещено. Сайт носит исключительно информационный характер, и ни при каких условиях не является публичной офертой, определяемой положениями статьи 437(2) Гражданского кодекса Российской Федерации.Наличие и цены уточняйте у наших операторов. Сайт использует технологию cookie. Используя сайт, Вы соглашаетесь с правилами использования cookie, а также даете согласие на обработку персональных данных
+                </p>
+            </div>
+        </div>
+    </footer>
+<script>
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('.header__main-wrapper');
+
+    mobileBtn.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
+</body>
+</html>

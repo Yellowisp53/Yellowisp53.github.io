@@ -1,0 +1,1560 @@
+html {
+    scroll-behavior: smooth;
+}
+/* ОБЩИЕ СТИЛИ И СБРОСЫ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f9;
+    color: #333333;
+}
+
+.container {
+    max-width: 1240px; 
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* --- ШАПКА САЙТА --- */
+.header {
+    width: 100%;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.header__top {
+    background-color: #f8fafc;
+    font-size: 13px;
+    padding: 12px 0;
+    color: #64748b;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.header__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__top-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header__logo img {
+    display: block;
+    height: 28px;
+    object-fit: contain;
+}
+
+.header__city {
+    color: #0056b3;
+    border-bottom: 1px dashed #0056b3;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.header__center-contacts {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header__phone {
+    font-weight: bold;
+    color: #1e293b;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.header__callback {
+    color: #0056b3;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.header__top-nav a {
+    text-decoration: none;
+    color: #64748b;
+    margin-left: 20px;
+}
+
+.header__main {
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.header__main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header__catalog-group {
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.btn {
+    padding: 14px 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn--catalog {
+    background-color: #004b93;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.burger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 16px;
+    height: 12px;
+}
+
+.burger-icon span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 1px;
+}
+
+.btn--action {
+    background-color: #005bb7;
+    color: #ffffff;
+    border-left: 1px solid #003d7a;
+}
+
+.btn--brand {
+    background-color: #0066cc;
+    color: #ffffff;
+    border-left: 1px solid #004b93;
+}
+
+.header__search-wrap {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 0 14px;
+    background-color: #ffffff;
+    height: 45px;
+}
+
+.search-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    object-fit: contain;
+}
+
+.header__search-wrap input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+}
+
+.header__user-menu {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.user-menu__item {
+    display: block;
+    position: relative;
+}
+
+.user-menu__item img {
+    width: 38px;
+    height: 38px;
+    display: block;
+    object-fit: contain;
+}
+
+.user-menu__item--badge .badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: #ffcc00;
+    color: #000000;
+    font-size: 10px;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- СТИЛИ ГЛАВНОГО БАННЕРА --- */
+.promo-section {
+    display: flex;
+    gap: 2px;
+    margin-top: 15px;
+    height: 380px;
+}
+
+.promo-slider {
+    position: relative;
+    flex-grow: 1;
+    background-color: #004b93;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 45px;
+    cursor: pointer;
+}
+.slider-arrow--left { left: 20px; }
+.slider-arrow--right { right: 20px; }
+
+.promo-slider__title {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.promo-slider__subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn--more {
+    background-color: #ffcc00;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 12px 40px;
+    font-size: 13px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.promo-slider__dots {
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    gap: 8px;
+}
+.promo-slider__dots .dot {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 50%;
+}
+.promo-slider__dots .dot.active { background-color: #ffffff; }
+
+.promo-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 320px;
+    flex-shrink: 0;
+}
+
+.aside-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    color: white;
+}
+.aside-card--blue { background-color: #0f62ac; }
+.aside-card--teal { background-color: #26b9b3; }
+
+.aside-card__title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+.aside-card__link {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+/* --- ПРЕИМУЩЕСТВА --- */
+.features-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 30px 10px;
+    margin-top: 20px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 230px;
+}
+
+.feature-item__icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.feature-item__text {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #333333;
+}
+
+/* --- КОЛЛЕКЦИИ ПЛИТКИ --- */
+.collections-section {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 4px;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a2b4c;
+    margin-bottom: 20px;
+}
+
+.collections-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 210px 210px;
+    gap: 15px;
+}
+
+.collection-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.collection-card--large { grid-row: span 2; }
+
+.collection-info-block { align-self: flex-start; }
+
+.collection-card__badge {
+    background-color: #23a1ab;
+    color: #ffffff;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.collection-card__brand {
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: 6px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+/* --- СЛАЙДЕРЫ ТОВАРОВ --- */
+.hits-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}   
+
+.hits-header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.hits-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111111;
+}
+
+.hits-tabs {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+.hit-tab {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    color: #0077cc;
+    padding: 8px 16px;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.hit-tab.active { background-color: #38bdf8; color: #ffffff; border-color: #38bdf8; }
+.offers-slider-section .hit-tab.active { background-color: #2baeb7; color: #ffffff; border-color: #2baeb7; }
+
+.hits-slider-wrapper { position: relative; display: flex; align-items: center; }
+
+.hit-arrow {
+    position: absolute;
+    width: 36px;
+    height: 50px;
+    background-color: #e2e8f0;
+    border: none;
+    font-size: 24px;
+    color: #334155;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 4px;
+    opacity: 0.7;
+}
+.hit-arrow:hover { opacity: 1; }
+.hit-arrow--left { left: -18px; }
+.hit-arrow--right { right: -18px; }
+
+.hits-grid { display: flex; justify-content: space-between; gap: 10px; width: 100%; }
+
+.product-item {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid #e2e8f0;
+    min-width: 0;
+}
+
+.product-item__badges {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    z-index: 2;
+}
+
+.p-badge {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 2px;
+    color: #ffffff;
+    display: inline-block;
+    width: max-content;
+}
+.p-badge--hit { background-color: #facc15; color: #000; }
+.p-badge--action { background-color: #e11d48; }
+
+.product-item__image {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.product-item__image img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+.product-item__rating { margin-bottom: 8px; font-size: 12px; }
+.product-item__rating .stars { color: #facc15; }
+.product-item__rating .rating-count { color: #94a3b8; margin-left: 4px; }
+
+.product-item__title {
+    font-size: 13px;
+    color: #333333;
+    text-decoration: none;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 54px;
+}
+
+.product-item__country { font-size: 12px; color: #64748b; margin-bottom: 15px; }
+.product-item__footer { margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; gap: 10px; }
+.price-current { font-size: 18px; font-weight: bold; color: #000000; }
+.price-old { font-size: 12px; color: #e11d48; text-decoration: line-through; margin-top: 2px; }
+
+.product-item__cart-btn {
+    background-color: transparent;
+    border: 1px solid #0284c7;
+    color: #0284c7;
+    padding: 8px 12px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.product-item__cart-btn:hover { background-color: #0284c7; color: #ffffff; }
+
+/* --- ПОПУЛЯРНЫЕ БРЕНДЫ --- */
+.brands-section {     margin-top: 25px;
+    margin-bottom: 25px; }
+.brands-title { position: relative; padding-bottom: 8px; margin-bottom: 30px; display: inline-block; }
+.brands-title::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background-color: #3b71ca; }
+.brands-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.brand-item {
+    background-color: #ffffff;
+    border: 1px solid #eef2f5;
+    border-radius: 4px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.brand-item img { max-width: 90%; max-height: 80%; object-fit: contain; }
+
+/* --- СТАТЬИ --- */
+.articles-section {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.articles-title { font-size: 24px; font-weight: bold; color: #000000; position: relative; padding-bottom: 12px; margin-bottom: 35px; display: inline-block; }
+.articles-title::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background-color: #3b71ca; }
+.articles-slider-container { position: relative; }
+.article-arrow {
+    position: absolute;
+    top: 38%;
+    width: 34px;
+    height: 60px;
+    background-color: rgba(226, 232, 240, 0.65);
+    border: none;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}
+.article-arrow--left { left: -12px; }
+.article-arrow--right { right: -12px; }
+.articles-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.article-card { background-color: #ffffff; display: flex; flex-direction: column; border-radius: 2px; }
+.article-card__image { width: 100%; height: 175px; }
+.article-card__image img { width: 100%; height: 100%; object-fit: cover; }
+.article-card__content { padding: 20px 15px; flex-grow: 1; }
+.article-card__title {
+    font-size: 13.5px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 56px;
+}
+
+/* --- СЕДЬМОЙ БЛОК: SEO-ТЕКСТ С КУХНЕЙ --- */
+.seo-section {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding-top: 40px; 
+}
+
+.seo-container {
+    position: relative;
+    width: 100%;
+    min-height: 440px; 
+}
+
+.seo-bg-plate {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 82%; 
+    height: 441px; 
+    background-color: #36b9b5; 
+    z-index: 1;
+}
+
+.seo-content-grid {
+    position: relative;
+    z-index: 2; 
+    display: grid;
+    grid-template-columns: 440px 1fr; 
+    align-items: flex-start;
+}
+
+.seo-image {
+    width: 440px;
+    height: 340px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
+}
+
+.seo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.seo-text-block {
+    padding: 45px 50px 40px 50px;
+    color: #ffffff; 
+}
+
+.seo-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+}
+
+.seo-paragraph {
+    font-size: 13.5px;
+    line-height: 1.65;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9); 
+}
+
+.seo-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+.seo-link {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.seo-link:hover {
+    text-decoration: none;
+}
+
+
+/* ==========================================================================
+   --- ДОПИСАННЫЙ ПОДВАЛ САЙТА (FOOTER) — ПО КООРДИНАТАМ ИЗ ФИГМЫ ---
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+.footer {
+    width: 100%;
+    margin-top: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+/* Верхняя абсолютно белая часть подвала (высота из фигмы ~420px) */
+.footer__main-white {
+    background: #FFFFFF;
+    padding: 45px 0;
+    border-top: 1px solid #eef2f5;
+}
+
+/* Сетка контента на 4 колонки */
+.footer__grid {
+    display: grid;
+    grid-template-columns: 240px 150px 1fr 260px;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Стили синих списков навигации (1 и 2 колонка) */
+.footer__navigation {
+    list-style: none;
+}
+
+.footer__navigation li {
+    margin-bottom: 1px; /* в соответствии со структурой line-height */
+}
+
+.footer__navigation a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 40px; /* Из фигмы: line-height: 40px */
+    color: #2B7BC6; /* Из фигмы: blue-3 */
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.footer__navigation a:hover {
+    text-decoration: underline;
+}
+
+/* 3 Колонка: Телефон, Кнопка, Расписание, Лого и Ссылки */
+.footer__contacts-block {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.footer__phone-link {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 40px; /* Из фигмы: line-height: 40px */
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+/* Кнопка "ЗАКАЗАТЬ ЗВОНОК" (из фигмы: 178px на 36px) */
+.footer__callback-btn {
+    box-sizing: border-box;
+    width: 178px;
+    height: 36px;
+    border: 1px solid #1061AB; /* Из фигмы: blue-2 */
+    border-radius: 4px;
+    background: transparent;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #1061AB;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.footer__callback-btn:hover {
+    background-color: #1061AB;
+    color: #ffffff;
+}
+
+/* Расписание работы */
+.footer__schedule {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px; /* Из фигмы: line-height: 30px */
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+/* Горизонтальный ряд для Логотипа и Соцсетей внизу */
+.footer__meta-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: auto;
+}
+
+.footer__logo-bottom img {
+    width: 214px; /* Из фигмы: width: 213.92px */
+    height: 24px;
+    object-fit: contain;
+    display: block;
+}
+
+.footer__social-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Иконки соцсетей (28x28px и 33x28px по спецификации) */
+.footer__social-links a img {
+    display: block;
+    height: 28px;
+    object-fit: contain;
+}
+
+.footer__social-links .ico-whatsapp img { width: 28px; }
+.footer__social-links .ico-telegram img { width: 33px; }
+.footer__social-links .ico-instagram img { width: 28px; }
+
+/* 4 Колонка: Склад и Яндекс Маркет */
+.footer__info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 240px;
+}
+
+.footer__address {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px; /* Из фигмы: line-height: 30px */
+    color: #000000;
+}
+
+.footer__address a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Блок Яндекс Маркета (из фигмы: 148px на 99px) */
+.footer__yandex-badge {
+    margin-top: 40px;
+}
+
+.footer__yandex-badge img {
+    width: 148px;
+    height: 99px;
+    object-fit: contain;
+    display: block;
+}
+
+/* --- Нижняя серая часть подвала (высота по фигме ~210px) --- */
+.footer__bottom-gray {
+    background-color: #f4f7f9;
+    border-top: 1px solid #e2e8f0;
+    padding: 35px 0 50px 0;
+}
+
+.footer__copyright {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px; /* Из фигмы */
+    color: #99A3A9; /* Из фигмы: gray-blue-2 */
+    margin-bottom: 20px;
+}
+
+.footer__disclaimer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px; /* Из фигмы: line-height: 24px */
+    color: #99A3A9; /* Из фигмы: gray-blue-2 */
+    text-align: justify;
+}
+
+
+/* --- МЕДИА-ЗАПРОСЫ ДЛЯ АДАПТИВНОСТИ --- */
+@media (max-width: 1200px) {
+    .seo-container { min-height: auto; }
+    .seo-bg-plate { width: 100%; height: 100%; bottom: 0; right: 0; }
+    .seo-content-grid { grid-template-columns: 380px 1fr; }
+    .seo-image { width: 380px; height: 290px; }
+    .seo-text-block { padding: 30px; }
+    
+    .footer__grid { grid-template-columns: 200px 130px 1fr 220px; gap: 20px; }
+    .footer__meta-row { flex-direction: column; align-items: flex-start; gap: 15px; }
+}
+
+@media (max-width: 992px) {
+    .seo-content-grid { grid-template-columns: 1fr; }
+    .seo-image { width: 100%; height: 300px; }
+    .seo-bg-plate { display: none; } 
+    .seo-text-block { background-color: #36b9b5; padding: 25px 20px; }
+    .seo-section { padding-top: 0; margin-top: 40px; }
+    
+    .hits-grid { flex-wrap: wrap; justify-content: center; }
+    .product-item { flex: none; width: 31%; margin-bottom: 15px; }
+    .brands-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+    .articles-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+    
+    .footer__grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .footer__info-block { min-height: auto; }
+}
+
+@media (max-width: 800px) {
+    .header__top-nav { display: none; }
+    .promo-section { flex-direction: column; height: auto; }
+    .promo-slider { height: 300px; }
+    .promo-aside { width: 100%; flex-direction: row; height: 150px; }
+    .features-section { flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .feature-item { max-width: 45%; }
+    .collections-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+    .collection-card--large { grid-row: auto; grid-column: span 2; height: 300px; }
+    .collection-card { height: 180px; }
+    .product-item { width: 47%; }
+}
+
+@media (max-width: 550px) {
+    .product-item { width: 100%; }
+    .brands-grid { grid-template-columns: 1fr; }
+    .articles-grid { grid-template-columns: 1fr; }
+    
+    .footer__grid { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+    .footer__contacts-block { padding-left: 0; align-items: center; }
+    .footer__meta-row { align-items: center; }
+    .footer__info-block { text-align: center; }
+}
+.mobile-menu-btn {
+    display: none;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 2000;
+    background: #005bb7;
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 6px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* МОБИЛКА */
+@media (max-width: 768px) {
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .header__main-wrapper {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        padding: 15px 0;
+        background: white;
+    }
+
+    .header__main-wrapper.active {
+        display: flex;
+    }
+
+    .header__top-wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header__center-contacts {
+        position: static;
+        transform: none;
+    }
+
+    .header__catalog-group {
+        flex-direction: column;
+    }
+
+    .header__user-menu {
+        justify-content: center;
+    }
+
+    .promo-slider__title {
+        font-size: 28px;
+    }
+
+    .promo-slider__subtitle {
+        font-size: 16px;
+    }
+
+    .promo-aside {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .aside-card {
+        min-height: 120px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
+
+/* ================================================================
+   ЗАДАНИЕ №4 — СТИЛИЗАЦИЯ ЭЛЕМЕНТОВ
+   Все эффекты добавлены НИЖЕ, оригинальный код не изменён
+================================================================ */
+
+
+/* ----------------------------------------------------------------
+   1. HOVER-ЭФФЕКТЫ (не менее 3 разных)
+---------------------------------------------------------------- */
+
+/* HOVER #1 — Кнопки шапки: сдвиг вверх + тень */
+.btn--catalog:hover,
+.btn--action:hover,
+.btn--brand:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 75, 147, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* HOVER #2 — Карточки коллекций: масштаб изображения */
+.collection-card {
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+.collection-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+}
+.collection-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    transition: background 0.3s ease;
+    z-index: 1;
+}
+.collection-card:hover::before {
+    background: rgba(0,0,0,0.12);
+}
+
+/* HOVER #3 — Карточки товаров: подъём + тень */
+.product-item {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.product-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.13);
+}
+
+/* HOVER #4 — Карточки статей: затемнение изображения */
+.article-card {
+    transition: box-shadow 0.25s ease;
+}
+.article-card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.13);
+}
+.article-card__image img {
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+.article-card:hover .article-card__image img {
+    filter: brightness(0.88);
+    transform: scale(1.04);
+}
+
+/* HOVER #5 — Иконки соцсетей: масштаб */
+.footer__social-links a {
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+.footer__social-links a:hover {
+    transform: scale(1.2);
+}
+
+/* HOVER #6 — Иконки меню пользователя */
+.user-menu__item {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.user-menu__item:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+
+
+/* ----------------------------------------------------------------
+   2. ОФОРМЛЕНИЕ ГИПЕРССЫЛОК
+---------------------------------------------------------------- */
+
+/* Ссылки навигации шапки: плавное подчёркивание снизу */
+.header__top-nav a {
+    position: relative;
+    transition: color 0.2s ease;
+}
+.header__top-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; left: 0;
+    width: 0; height: 2px;
+    background: #0056b3;
+    transition: width 0.25s ease;
+}
+.header__top-nav a:hover {
+    color: #0056b3;
+}
+.header__top-nav a:hover::after {
+    width: 100%;
+}
+
+/* Ссылки футера: подчёркивание появляется при ховере */
+.footer__navigation a {
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+.footer__navigation a:hover {
+    color: #004b93;
+    padding-left: 4px;
+    text-decoration: underline;
+}
+
+/* Email в адресе футера */
+.footer__address a {
+    transition: color 0.2s ease;
+    border-bottom: 1px dashed #aaa;
+}
+.footer__address a:hover {
+    color: #0056b3;
+    border-bottom-color: #0056b3;
+}
+
+/* Заголовки статей — ссылки */
+.article-card__title {
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+.article-card__title:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Aside-ссылки баннера "подробнее" */
+.aside-card__link {
+    transition: opacity 0.2s ease, letter-spacing 0.2s ease;
+}
+.aside-card__link:hover {
+    opacity: 1;
+    letter-spacing: 0.06em;
+    text-decoration: underline;
+}
+
+
+/* ----------------------------------------------------------------
+   3. ТЕНИ (box-shadow)
+---------------------------------------------------------------- */
+
+/* Тень на шапке — уже есть, усиливаем при скролле через класс */
+.sticky-header {
+    box-shadow: 0 2px 16px rgba(0,0,0,0.11);
+}
+
+/* Тень на блоке преимуществ */
+.features-section {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+/* Тень на секции коллекций */
+.collections-section {
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+}
+
+/* Тень на карточках товаров (базовая) */
+.product-item {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+}
+
+/* Внутренняя тень у поля поиска (inset) */
+.header__search-wrap {
+    box-shadow: inset 0 1px 4px rgba(0,0,0,0.07);
+    transition: box-shadow 0.2s ease;
+}
+.header__search-wrap:focus-within {
+    box-shadow: inset 0 1px 4px rgba(0,0,0,0.07), 0 0 0 2px rgba(0,86,179,0.18);
+    border-color: #0056b3;
+}
+
+/* Тень на брендах */
+.brand-item {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.brand-item:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+}
+
+
+/* ----------------------------------------------------------------
+   4. ГРАДИЕНТЫ
+---------------------------------------------------------------- */
+
+/* Градиент на кнопке "Подробнее" баннера */
+.btn--more {
+    background: linear-gradient(135deg, #ffcc00 0%, #ffa500 100%);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.btn--more:hover {
+    background: linear-gradient(135deg, #ffa500 0%, #ffcc00 100%);
+    transform: scale(1.05);
+}
+
+/* Градиент-подложка под текстом в коллекциях (поверх существующего фона) */
+.collection-info-block {
+    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.10) 100%);
+    padding: 14px 14px 12px;
+}
+
+/* Градиент на нижней части карточки товара */
+.product-item__image-wrap {
+    position: relative;
+}
+.product-item__image-wrap::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, rgba(244,247,249,0.6));
+    pointer-events: none;
+}
+
+/* Градиент на кнопке "В корзину" */
+.product-item__cart-btn {
+    background: linear-gradient(90deg, #e8f0fb 0%, #d6e4f7 100%);
+    transition: background 0.2s ease, color 0.2s ease;
+}
+.product-item__cart-btn:hover {
+    background: linear-gradient(90deg, #0056b3 0%, #004b93 100%);
+    color: #ffffff;
+    border-color: transparent;
+}
+
+
+/* ----------------------------------------------------------------
+   5. ФИЛЬТРЫ НА ИЗОБРАЖЕНИЯХ
+---------------------------------------------------------------- */
+
+/* Иконки преимуществ: насыщенность при ховере */
+.feature-item__icon {
+    transition: filter 0.3s ease, transform 0.3s ease;
+    filter: saturate(0.8);
+}
+.feature-item:hover .feature-item__icon {
+    filter: saturate(1.4) drop-shadow(0 2px 6px rgba(38,185,179,0.35));
+    transform: scale(1.1);
+}
+
+/* Логотип: при ховере чуть ярче */
+.header__logo img {
+    transition: filter 0.2s ease;
+}
+.header__logo img:hover {
+    filter: brightness(1.1) drop-shadow(0 2px 6px rgba(0,75,147,0.2));
+}
+
+/* Изображение в SEO-блоке: при ховере слегка осветляется */
+.seo-image img {
+    transition: filter 0.35s ease, transform 0.35s ease;
+}
+.seo-image:hover img {
+    filter: brightness(1.07) saturate(1.1);
+    transform: scale(1.02);
+}
+
+/* Иконки соцсетей: цветной оттенок */
+.footer__social-links a img {
+    filter: saturate(0.85);
+    transition: filter 0.2s ease;
+}
+.footer__social-links a:hover img {
+    filter: saturate(1.3) brightness(1.1);
+}
+
+
+/* ----------------------------------------------------------------
+   6. ФОРМА ОБРАТНОЙ СВЯЗИ
+   (добавлена в HTML через id="feedback-section")
+---------------------------------------------------------------- */
+.feedback-section {
+    background: #ffffff;
+    padding: 30px 28px;
+    border-radius: 6px;
+    margin-top: 20px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+}
+
+.feedback-section h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a2b4c;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1a2b4c;
+    padding-bottom: 6px;
+    display: inline-block;
+}
+
+.feedback-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.feedback-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.feedback-form__field label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    letter-spacing: 0.03em;
+}
+
+.feedback-form__field input,
+.feedback-form__field textarea {
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-size: 13px;
+    font-family: inherit;
+    color: #333;
+    outline: none;
+    background: #f8fafc;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feedback-form__field input:focus,
+.feedback-form__field textarea:focus {
+    border-color: #0056b3;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(0,86,179,0.12);
+}
+
+/* Textarea занимает оба столбца */
+.feedback-form__field--full {
+    grid-column: 1 / -1;
+}
+
+.feedback-form__field textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.feedback-form__submit {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.feedback-form__btn {
+    background: linear-gradient(90deg, #004b93 0%, #0066cc 100%);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 36px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+.feedback-form__btn:hover {
+    background: linear-gradient(90deg, #003370 0%, #004b93 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,75,147,0.3);
+}
+
+
+/* ----------------------------------------------------------------
+   7. ТРАНСФОРМАЦИИ
+---------------------------------------------------------------- */
+
+/* Логотип в шапке — лёгкий scale при ховере */
+.header__logo {
+    transition: transform 0.2s ease;
+}
+.header__logo:hover {
+    transform: scale(1.04);
+}
+
+/* Стрелки слайдера — rotate при ховере */
+.slider-arrow {
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+.slider-arrow--left:hover {
+    color: rgba(255,255,255,0.9);
+    transform: translateY(-50%) translateX(-3px);
+}
+.slider-arrow--right:hover {
+    color: rgba(255,255,255,0.9);
+    transform: translateY(-50%) translateX(3px);
+}
+
+/* Стрелки статей */
+.article-arrow {
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+.article-arrow:hover {
+    transform: scale(1.15);
+}
+
+/* Бейдж корзины/лайка — bounce при ховере */
+.user-menu__item--badge:hover .badge {
+    transform: scale(1.25) rotate(-10deg);
+    transition: transform 0.2s ease;
+}
+
+/* Кнопка "ЗАКАЗАТЬ ЗВОНОК" в футере */
+.footer__callback-btn {
+    transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+.footer__callback-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(16,97,171,0.28);
+}
+
+
+/* ----------------------------------------------------------------
+   8. АНИМАЦИИ И ПЕРЕХОДЫ
+---------------------------------------------------------------- */
+
+/* Анимация появления точек слайдера */
+@keyframes dotPulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50%       { transform: scale(1.5); opacity: 0.7; }
+}
+.promo-slider__dots .dot.active {
+    animation: dotPulse 2s ease-in-out infinite;
+}
+
+/* Анимация плавного появления секций при загрузке */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.features-section  { animation: fadeInUp 0.5s ease both 0.1s; }
+.collections-section { animation: fadeInUp 0.5s ease both 0.2s; }
+.hits-section      { animation: fadeInUp 0.5s ease both 0.3s; }
+.brands-section    { animation: fadeInUp 0.5s ease both 0.35s; }
+.articles-section  { animation: fadeInUp 0.5s ease both 0.4s; }
+
+/* Плавный переход цвета у всех кнопок */
+.btn {
+    transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+/* "Пульс" на бейдже корзины */
+@keyframes badgePulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255,204,0,0.6); }
+    50%       { box-shadow: 0 0 0 5px rgba(255,204,0,0); }
+}
+.user-menu__item--badge .badge {
+    animation: badgePulse 2.5s ease-in-out infinite;
+}
+
+/* Плавный переход для всех ссылок */
+a {
+    transition: color 0.18s ease;
+}
+
+
+/* ----------------------------------------------------------------
+   9. ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ
+---------------------------------------------------------------- */
+
+/* Декоративная левая полоска у заголовков секций */
+.section-title {
+    position: relative;
+    padding-left: 14px;
+}
+.section-title::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 3px;
+    width: 4px;
+    height: calc(100% - 6px);
+    background: linear-gradient(to bottom, #004b93, #26b9b3);
+    border-radius: 2px;
+}
+
+/* Декоративный разделитель между преимуществами */
+.feature-item + .feature-item {
+    border-left: 1px solid #e8edf4;
+    padding-left: 15px;
+}
+
+/* Декоративная рамка вокруг блока брендов при ховере */
+.brand-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+/* Декоративная точка перед элементами списка футера */
+.footer__navigation li {
+    position: relative;
+    padding-left: 0;
+}
+.footer__navigation a::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #2B7BC6;
+    border-radius: 50%;
+    margin-right: 7px;
+    vertical-align: middle;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.footer__navigation a:hover::before {
+    opacity: 1;
+}
+
+/* Декоративная подсветка активной точки слайдера */
+.promo-slider__dots .dot.active {
+    box-shadow: 0 0 8px 2px rgba(255,255,255,0.5);
+}
+
+
+/* ----------------------------------------------------------------
+   10. ДОПОЛНИТЕЛЬНЫЕ ЭФФЕКТЫ (3D-трансформации)
+---------------------------------------------------------------- */
+
+/* 3D-flip на карточках брендов при ховере */
+.brand-item {
+    perspective: 600px;
+}
+.brand-item img {
+    transition: transform 0.4s ease;
+    transform-style: preserve-3d;
+}
+.brand-item:hover img {
+    transform: rotateY(12deg) scale(1.05);
+}
+
+/* 3D-наклон на aside-карточках баннера */
+.aside-card {
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+}
+.aside-card:hover {
+    transform: perspective(600px) rotateX(-3deg) scale(1.01);
+}
+
+/* Плавающая тень под кнопкой "Подробнее" */
+.btn--more {
+    box-shadow: 0 4px 14px rgba(255,165,0,0.3);
+}
+.btn--more:hover {
+    box-shadow: 0 8px 24px rgba(255,165,0,0.45);
+}
